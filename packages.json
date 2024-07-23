@@ -6,8 +6,8 @@
     "date": "2024-22-07", 
     "version": "1.0", 
     "dependencies": [],
-    "folder": "Reboot",
-    "download": "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/djware/TrimUITools/tree/main/Tools/Reboot", 
+    "mainfilename": "example.juk",
+    "download": "https://github.com/jukaLang/Example", 
     "device": ["all"]
   },
 ]
