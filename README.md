@@ -17,7 +17,7 @@ Each package entry must include:
 - **date** – Release date (`YYYY-MM-DD`)  
 - **version** – Package version  
 - **dependencies** – Array of required packages (or empty array)  
-- **mainfilename** – The `.juk` file that serves as the entry point  
+- **mainfilename** – The `.sh` file that serves as the entry point  
 - **download** – URL to the package repository or download location  
 - **device** – Supported devices (`"all"` or list of specific devices)
 
@@ -32,7 +32,7 @@ Each package entry must include:
     "date": "2024-07-22",
     "version": "1.0",
     "dependencies": [],
-    "mainfilename": "example.juk",
+    "mainfilename": "launch.sh",
     "download": "https://github.com/jukaLang/Example",
     "device": ["all"]
   }
