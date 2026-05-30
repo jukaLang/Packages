@@ -1,13 +1,134 @@
-[ 
-  { 
-    "name": "Example", 
-    "author": "Juka", 
-    "description": "An example of Juka package",
-    "date": "2024-22-07", 
-    "version": "1.0", 
+[
+  {
+    "name": "FTP",
+    "author": "djware",
+    "description": "Starts an FTP server on the device. Run again to stop it. Automatically times out after 5 minutes of inactivity. Optionally modify the script to set a root password.",
+    "date": "2024-04-04",
+    "version": "2.0",
     "dependencies": [],
-    "mainfilename": "example.juk",
-    "download": "https://github.com/jukaLang/Example", 
-    "device": ["all"]
+    "mainfilename": "launch.sh",
+    "download": "https://github.com/djware/TrimUITools",
+    "device": ["trimui_smart_pro"]
   },
+  {
+    "name": "FTP Enable",
+    "author": "djware",
+    "description": "Enables FTP at every boot by mounting /mnt/SDCARD. Run once to enable persistent FTP access (user: root, pass: root). Run again to disable the boot entry.",
+    "date": "2024-04-04",
+    "version": "2.0",
+    "dependencies": [],
+    "mainfilename": "launch.sh",
+    "download": "https://github.com/djware/TrimUITools",
+    "device": ["trimui_smart_pro"]
+  },
+  {
+    "name": "Telnetd",
+    "author": "djware",
+    "description": "Installs a static telnetd binary and adds it to rc.local so the device is accessible via Telnet on port 23 at every boot. Sets root credentials to user: root, pass: root. Only needs to be run once.",
+    "date": "2024-04-04",
+    "version": "2.0",
+    "dependencies": [],
+    "mainfilename": "launch.sh",
+    "download": "https://github.com/djware/TrimUITools",
+    "device": ["trimui_smart_pro"]
+  },
+  {
+    "name": "Random Game",
+    "author": "djware",
+    "description": "Picks a random emulator and a matching ROM from your SDCARD and launches it. Configurable base directories for Roms and Emus via script edit.",
+    "date": "2024-04-04",
+    "version": "2.0",
+    "dependencies": [],
+    "mainfilename": "launch.sh",
+    "download": "https://github.com/djware/TrimUITools",
+    "device": ["trimui_smart_pro"]
+  },
+  {
+    "name": "Max CPU",
+    "author": "djware",
+    "description": "Forces the device into Performance CPU governor mode and keeps it there even after resets or FN button presses. LEDs turn green on success.",
+    "date": "2024-04-04",
+    "version": "2.0",
+    "dependencies": [],
+    "mainfilename": "launch.sh",
+    "download": "https://github.com/djware/TrimUITools",
+    "device": ["trimui_smart_pro"]
+  },
+  {
+    "name": "Reboot",
+    "author": "djware",
+    "description": "A simple app to restart the TrimUI Smart Pro quickly and cleanly from within the menu.",
+    "date": "2024-04-04",
+    "version": "2.0",
+    "dependencies": [],
+    "mainfilename": "launch.sh",
+    "download": "https://github.com/djware/TrimUITools",
+    "device": ["trimui_smart_pro"]
+  },
+  {
+    "name": "Mac Update",
+    "author": "djware",
+    "description": "Sets the device Wi-Fi MAC address to a static value to prevent connectivity issues across reboots. Not required on firmware 1.0.4 hotfix 20240414 or later.",
+    "date": "2024-04-04",
+    "version": "2.0",
+    "dependencies": [],
+    "mainfilename": "launch.sh",
+    "download": "https://github.com/djware/TrimUITools",
+    "device": ["trimui_smart_pro"]
+  },
+  {
+    "name": "RainbowLEDs",
+    "author": "djware",
+    "description": "Cycles the joystick and middle LEDs through a full rainbow of colors in a continuous loop. Run the app again to stop the effect.",
+    "date": "2024-04-04",
+    "version": "2.0",
+    "dependencies": [],
+    "mainfilename": "launch.sh",
+    "download": "https://github.com/djware/TrimUITools",
+    "device": ["trimui_smart_pro"]
+  },
+  {
+    "name": "LED Temp",
+    "author": "djware",
+    "description": "Colors the LEDs to indicate CPU temperature in real time: green (<40°C) through red (>70°C). Run the app again to stop the effect.",
+    "date": "2024-04-04",
+    "version": "2.0",
+    "dependencies": [],
+    "mainfilename": "launch.sh",
+    "download": "https://github.com/djware/TrimUITools",
+    "device": ["trimui_smart_pro"]
+  },
+  {
+    "name": "LED Batt",
+    "author": "djware",
+    "description": "Colors the LEDs to indicate remaining battery percentage in real time: green (100-90%) through red (<20%). Run the app again to stop the effect.",
+    "date": "2024-04-04",
+    "version": "2.0",
+    "dependencies": [],
+    "mainfilename": "launch.sh",
+    "download": "https://github.com/djware/TrimUITools",
+    "device": ["trimui_smart_pro"]
+  },
+  {
+    "name": "UDISK",
+    "author": "djware",
+    "description": "Formats and unlocks the internal UDISK partition as FAT32, exposing ~6 GB of on-device storage for apps, emulators, and ROMs. Also replaces the stock usb_storage app to allow simultaneous SDCARD and UDISK USB mounting. USE AT YOUR OWN RISK — formats UDISK partition. Only needs to be run once.",
+    "date": "2024-04-04",
+    "version": "2.0",
+    "dependencies": [],
+    "mainfilename": "launch.sh",
+    "download": "https://github.com/djware/TrimUITools/releases/tag/Tools2",
+    "device": ["trimui_smart_pro"]
+  },
+  {
+    "name": "Bootlogo Updater",
+    "author": "djware",
+    "description": "Replaces the startup boot image with a custom BMP file. Place a logo.bmp (max 1280x720, under 6 MB) on the root of SDCARD or UDISK and run this app to apply it.",
+    "date": "2024-04-04",
+    "version": "2.0",
+    "dependencies": [],
+    "mainfilename": "launch.sh",
+    "download": "https://github.com/djware/TrimUITools",
+    "device": ["trimui_smart_pro"]
+  }
 ]
