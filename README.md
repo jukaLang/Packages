@@ -26,6 +26,8 @@ Optional fields:
 - **icon** – HTTPS link to a picture shown on the package's card in the Juka store (PNG, JPG, WebP or BMP, **1 MB at most**). Packages without one show a letter tile. Link to the app's own icon in its GitHub repository, pinned to a commit so the link keeps working if files move:
   `https://raw.githubusercontent.com/<owner>/<repo>/<commit-sha>/<path>/icon.png`
 
+  Icons for the games below are copied from each game's own zip and hosted in this repository's [`icons/`](icons) folder, because those games' upstream repos don't ship a matching icon file.
+
 ### ✅ Example Entry
 
 ```json
@@ -177,6 +179,87 @@ All removal requests will be reviewed by the maintainers before merging.
 |------|-------------|
 | **Brick LED Controller** | Configures TrimUI Brick LED brightness, color and effects, plus the low-battery warning. Works on stock OS and MinUI. |
 
+### nlkcodenew — more
+
+| Name | Source | Description |
+|------|--------|-------------|
+| **Trimui Remote** | [trimui-remote](https://github.com/nlkcodenew/trimui-remote) | SSH (dropbear) access for the TrimUI Brick Pro and Smart Pro S on stock OS. |
+
+---
+
+### joyrider3774 — [trimui_smart_pro_games](https://github.com/joyrider3774/trimui_smart_pro_games)
+
+> ℹ️ Stock OS games for the TrimUI Smart Pro. Each zip is extracted into `Apps`.
+
+| Name | Description |
+|------|-------------|
+| **Blips** | Blips Playdate. |
+| **Blockdude** | Blockdude Playdate. |
+| **cglpSDL2** | Crisp Games Library Portable. |
+| **Checkers** | Checkers Playdate. |
+| **Dynamate** | Dynamate Playdate. |
+| **Formula 1 G&W** | Formula 1 Game & Watch Playdate. |
+| **MazeThingie** | Maze generator and player. |
+| **Playdoban** | Playdoban Playdate. |
+| **Puztrix** | Puztrix Playdate. |
+| **Puzzle Land** | Puzzle Land Playdate. |
+| **Retrotime** | Retrotime. |
+| **Rubido** | Rubido Playdate. |
+| **Waternet** | Waternet Playdate. |
+| **Worm** | Worm Playdate. |
+| **Znax** | Znax. |
+
+---
+
+### 32Blit games — [32blit_trimui](https://github.com/joyrider3774/32blit_trimui)
+
+> ℹ️ [32Blit SDK](https://github.com/32blit) games ported to the TrimUI by joyrider3774 (Smart Pro and Brick, stock OS). The original authors and repositories are listed below.
+
+| Name | Original author |
+|------|-----------------|
+| **2048 (32Blit)** | ArtemHarkusha |
+| **32Blox (32Blit)** | ahnlak-blit32 |
+| **4 in a Row (32Blit)** | lummi01 |
+| **Jumpy Squirrel (32Blit)** | ThePythonator |
+| **Ping (32Blit)** | ThePythonator |
+| **Snake (32Blit)** | lummi01 |
+| **Solitaire (32Blit)** | ThatOtherOtherBob |
+| **Super Square Bros (32Blit)** | ThePythonator |
+| **Tower Defense (32Blit)** | Blackhawk-TA |
+| **Alien Attack (32Blit)** | lummi01 |
+| **A-Maze (32Blit)** | andreban |
+| **Asteroids (32Blit)** | lummi01 |
+| **Super Blit Kart (32Blit)** | Daft-Freak |
+| **Blit Racers (32Blit)** | shane-powell |
+| **Bounce (32Blit)** | lummi01 |
+| **Cannonhead (32Blit)** | lummi01 |
+| **Car Sprint (32Blit)** | mikerr |
+| **Save the Castle (32Blit)** | lummi01 |
+| **Dino (32Blit)** | lummi01 |
+| **Dodgeem (32Blit)** | lummi01 |
+| **Dots (32Blit)** | Gadgetoid |
+| **Dune II (32Blit)** | mikerr |
+| **Fourblock Descent (32Blit)** | Daft-Freak |
+| **Geometry (32Blit)** | 32blit |
+| **Game of Life (32Blit)** | lummi01 |
+| **Pitfall Harry (32Blit)** | lummi01 |
+| **Indy 500 (32Blit)** | lummi01 |
+| **Invader (32Blit)** | lummi01 |
+| **Jetpac (32Blit)** | mikerr |
+| **Knight Lore (32Blit)** | mikerr |
+| **Match 3 (32Blit)** | deckerego |
+| **Minesweeper (32Blit)** | ArtemHarkusha |
+| **Missile Command (32Blit)** | lummi01 |
+| **Raycaster (32Blit)** | 32blit |
+| **Rocks and Diamonds (32Blit)** | 32blit |
+| **Scrolly Tile (32Blit)** | 32blit |
+| **Simon Says (32Blit)** | lummi01 |
+| **Snake Race (32Blit)** | lummi01 |
+| **Sokoblit (32Blit)** | ahnlak-blit32 |
+| **Tower (32Blit)** | lummi01 |
+| **Wakka Wakka (32Blit)** | mikerr |
+| **Willy (32Blit)** | mikerr |
+
 ---
 
 ## 🙏 Credits
@@ -195,3 +278,5 @@ Thanks to all the community contributors who build and maintain these tools:
 - **nlkcodenew** — Trimui-XiaoZhi, Trimui Terminal and Music Player
 - **ro8inmorgan** — LED Control
 - **pierceTee** — Brick LED Controller
+- **joyrider3774** — TrimUI Smart Pro games and the 32Blit TrimUI ports
+- **The 32Blit game authors** — ArtemHarkusha, ThePythonator, ahnlak-blit32, lummi01, Daft-Freak, mikerr, Gadgetoid, andreban, Blackhawk-TA, ThatOtherOtherBob, deckerego, shane-powell and the 32blit team
