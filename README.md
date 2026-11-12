@@ -1,13 +1,13 @@
 # 📦 Official List of Juka Packages
 
 This repository contains the official list of **Juka Packages** that appear inside the Juka application.  
-All packages are defined in **`Packages.json`**, which the Juka runtime reads to display and manage available packages.
+All packages are defined in **`packages.json`**, which the Juka runtime reads to display and manage available packages.
 
 ---
 
-## 🗂 Editing `Packages.json`
+## 🗂 Editing `packages.json`
 
-To add your own package, simply edit **`Packages.json`** and append a new entry following the structure below.
+To add your own package, simply edit **`packages.json`** and append a new entry following the structure below.
 
 Each package entry must include:
 
@@ -19,7 +19,12 @@ Each package entry must include:
 - **dependencies** – Array of required packages (or empty array)  
 - **mainfilename** – The `.sh` file that serves as the entry point  
 - **download** – URL to the package repository or download location  
-- **device** – Supported devices (`"all"` or list of specific devices)
+- **device** – Supported devices (`"all"` or list of specific devices, e.g. `trimui_smart_pro`, `trimui_smart_pro_s`, `trimui_brick`, `trimui_brick_pro`)
+
+Optional fields:
+
+- **icon** – HTTPS link to a picture shown on the package's card in the Juka store (PNG, JPG, WebP or BMP, **1 MB at most**). Packages without one show a letter tile. Link to the app's own icon in its GitHub repository, pinned to a commit so the link keeps working if files move:
+  `https://raw.githubusercontent.com/<owner>/<repo>/<commit-sha>/<path>/icon.png`
 
 ### ✅ Example Entry
 
@@ -34,7 +39,8 @@ Each package entry must include:
     "dependencies": [],
     "mainfilename": "launch.sh",
     "download": "https://github.com/jukaLang/Example",
-    "device": ["all"]
+    "device": ["all"],
+    "icon": "https://raw.githubusercontent.com/jukaLang/Example/<commit-sha>/icon.png"
   }
 ]
 ```
@@ -43,7 +49,7 @@ Each package entry must include:
 
 ## ❌ Requesting Package Removal
 
-If you would like a package removed from the official list, please **[submit a Pull Request](../../pulls)** that removes the relevant entry from `Packages.json`.  
+If you would like a package removed from the official list, please **[submit a Pull Request](../../pulls)** that removes the relevant entry from `packages.json`.  
 Include a brief reason for the removal in your PR description (e.g. deprecated, broken download link, author request).  
 All removal requests will be reviewed by the maintainers before merging.
 
@@ -131,6 +137,48 @@ All removal requests will be reviewed by the maintainers before merging.
 
 ---
 
+### hugorosario — [BrickTools](https://github.com/hugorosario/BrickTools)
+
+| Name | Description |
+|------|-------------|
+| **BrickTools** | Tools and system apps for the TrimUI Brick that match the stock theme: utilities, network, user interface, LED control and system menus, customizable through `menu.json`. Works on stock firmware and StockMix/CrossMix. |
+
+---
+
+### rommapp — [Grout](https://github.com/rommapp/grout)
+
+| Name | Description |
+|------|-------------|
+| **Grout** | RomM client for retro handhelds. Browse your RomM library and download games to the device over Wi-Fi. Install the TrimUI stock OS build on the TrimUI Brick or Smart Pro. |
+
+---
+
+### nlkcodenew
+
+| Name | Source | Description |
+|------|--------|-------------|
+| **Trimui-XiaoZhi** | [trimui-xiaozhi](https://github.com/nlkcodenew/trimui-xiaozhi) | Unofficial Xiaozhi voice assistant for the TrimUI Smart Pro S on stock OS, with chat history, settings and an optional web chat. |
+| **Trimui Terminal** | [trimui-terminal](https://github.com/nlkcodenew/trimui-terminal) | SDL2 terminal with a built-in Bluetooth gamepad survey tool. Brick Pro on stock OS is the primary target; Smart Pro S is not fully tested. |
+| **Music Player** | [Music-Player](https://github.com/nlkcodenew/Music-Player) | Self-contained music player for the TrimUI Brick Pro on stock OS, with Google Drive folders, playlists, synced lyrics and an equalizer. |
+
+---
+
+### ro8inmorgan — [LedControl](https://github.com/ro8inmorgan/LedControl)
+
+| Name | Description |
+|------|-------------|
+| **LED Control** | Controls the TrimUI Brick's LEDs from the device. Works on stock OS, StockMix/CrossMix and MinUI; includes an uninstaller. |
+
+---
+
+### pierceTee — [TrimuiLEDController](https://github.com/pierceTee/TrimuiLEDController)
+
+| Name | Description |
+|------|-------------|
+| **Brick LED Controller** | Configures TrimUI Brick LED brightness, color and effects, plus the low-battery warning. Works on stock OS and MinUI. |
+
+---
+
 ## 🙏 Credits
 
 Thanks to all the community contributors who build and maintain these tools:
@@ -142,3 +190,8 @@ Thanks to all the community contributors who build and maintain these tools:
 - **Primitheus** — OctoLair ROM downloader
 - **ahmadteeb** — EmuDrop and DNS Changer
 - **veckia9x** — ThemixPro and Syncthing
+- **hugorosario** — BrickTools
+- **rommapp** — Grout
+- **nlkcodenew** — Trimui-XiaoZhi, Trimui Terminal and Music Player
+- **ro8inmorgan** — LED Control
+- **pierceTee** — Brick LED Controller
