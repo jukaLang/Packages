@@ -28,6 +28,10 @@ Optional fields:
 
   Icons for the games below are copied from each game's own zip and hosted in this repository's [`icons/`](icons) folder, because those games' upstream repos don't ship a matching icon file.
 
+### 📥 How a package installs
+
+Every `download` must be a **direct link to a `.zip` file** (a GitHub release asset such as `…/releases/download/v1.0/App.zip`, or `…/releases/latest/download/App.zip`). The store downloads that URL as-is and unpacks it into its own `packages/` folder, so a link to a repository or a release *page* installs nothing useful. The zip should contain the app folder (with `config.json` and `launch.sh`) either at its top level or under `Apps/`.
+
 ### ✅ Example Entry
 
 ```json
@@ -78,44 +82,11 @@ All removal requests will be reviewed by the maintainers before merging.
 
 ---
 
-### schmurtzm — [TrimUI-Smart-Pro](https://github.com/schmurtzm/TrimUI-Smart-Pro)
-
-| Name | Description |
-|------|-------------|
-| **EmuCleaner** | Hides emulators with no ROMs and shows those that do; keeps your console list tidy. Compatible with stock MainUI manual overrides. |
-| **BootLogo** | User-friendly app for flashing a custom boot logo at startup. |
-| **System Tools** | Hub app centralizing multiple utility scripts, including a PSX Analog Detector for auto-configuring analog-compatible games. |
-| **Resume at Boot** | Adds a resume-last-game feature so the device automatically relaunches your last played game on startup. |
-| **Scraper** | Command-line ScreenScraper client that downloads box art and media for your ROM library directly on the device. |
-
----
-
 ### SneakyTwitch — [TrimUI-Apps](https://github.com/SneakyTwitch/TrimUI-Apps)
 
-> ℹ️ All four apps are included in the same release download.
-
 | Name | Description |
 |------|-------------|
-| **Backup Config Files** | Creates a timestamped backup of PPSSPP, DraStic (NDS), and RetroArch configs — including button mappings, core settings, and shaders. |
-| **Restore Config Files** | Restores a previously backed-up config set. Edit `ForRestoring.txt` to target a specific backup version. |
-| **BGM Start/Stop** | Toggles background music on/off for the currently active theme. Per-theme state is remembered. |
-| **BGM Swap** | Replaces the active theme's BGM with a custom `bgm.mp3` from the root of your SDCARD. Original is backed up as `bgm-bak.mp3`. |
-
----
-
-### rkr87 — [CollaGen](https://github.com/rkr87/CollaGen)
-
-| Name | Description |
-|------|-------------|
-| **CollaGen** | CLI-based game collection generator. Dynamically builds named ROM collections using keyword include/exclude filters. Works on CrossMix-OS and Stock OS (with minor edits). |
-
----
-
-### Primitheus — [OctoLair](https://github.com/Primitheus/OctoLair)
-
-| Name | Description |
-|------|-------------|
-| **OctoLair** | Downloads ROMs directly onto the device via a controller-friendly SDL2 UI. Browse systems, select games, and download without touching a PC. |
+| **Config Backup & BGM Tools** | Four apps in one download: Backup Config Files, Restore Config Files (PPSSPP, DraStic and RetroArch settings), BGM Start/Stop and BGM Swap. |
 
 ---
 
@@ -125,17 +96,6 @@ All removal requests will be reviewed by the maintainers before merging.
 |------|--------|-------------|
 | **EmuDrop** | [EmuDrop](https://github.com/ahmadteeb/EmuDrop) | Full-featured ROM downloader with a built-in screen scraper. Supports Stock OS, CrossMix-OS, and Knulli. Compatible with TrimUI Smart Pro and TrimUI Brick. |
 | **DNS Changer** | [TSP_DNSChanger](https://github.com/ahmadteeb/TSP_DNSChanger) | Changes DNS server settings on-device via a controller-friendly UI. Useful for improving connectivity or bypassing regional restrictions. |
-
----
-
-### veckia9x — [Trimui-X](https://github.com/veckia9x/Trimui-X)
-
-> ⚠️ These apps require **TRIMUI_EX** or **TomatoOS** to function.
-
-| Name | Description |
-|------|-------------|
-| **ThemixPro** | Automatically updates system icons, selection-state icons, and backgrounds whenever the active theme changes. Ships with the GREYS-DARK theme. |
-| **Syncthing** | Runs Syncthing on the device for wireless file sync with a PC or phone. Supports optional boot startup. Default credentials: `trimui` / `trimuisync`. |
 
 ---
 
@@ -161,6 +121,7 @@ All removal requests will be reviewed by the maintainers before merging.
 |------|--------|-------------|
 | **Trimui-XiaoZhi** | [trimui-xiaozhi](https://github.com/nlkcodenew/trimui-xiaozhi) | Unofficial Xiaozhi voice assistant for the TrimUI Smart Pro S on stock OS, with chat history, settings and an optional web chat. |
 | **Trimui Terminal** | [trimui-terminal](https://github.com/nlkcodenew/trimui-terminal) | SDL2 terminal with a built-in Bluetooth gamepad survey tool. Brick Pro on stock OS is the primary target; Smart Pro S is not fully tested. |
+| **Trimui GameSync** | [Trimui-GameSync](https://github.com/nlkcodenew/Trimui-GameSync) | Game-library manager for the Brick Pro and Smart Pro S on stock OS; syncs the games on your card with link-shared Google Drive folders. |
 | **Music Player** | [Music-Player](https://github.com/nlkcodenew/Music-Player) | Self-contained music player for the TrimUI Brick Pro on stock OS, with Google Drive folders, playlists, synced lyrics and an equalizer. |
 
 ---
@@ -187,27 +148,42 @@ All removal requests will be reviewed by the maintainers before merging.
 
 ---
 
-### joyrider3774 — [trimui_smart_pro_games](https://github.com/joyrider3774/trimui_smart_pro_games)
+### joyrider3774 — [trimui_smart_pro_games](https://github.com/joyrider3774/trimui_smart_pro_games) and [trimui_brick_games](https://github.com/joyrider3774/trimui_brick_games)
 
-> ℹ️ Stock OS games for the TrimUI Smart Pro. Each zip is extracted into `Apps`.
+> ℹ️ Stock OS games, built separately for the TrimUI Smart Pro (1280×720) and the TrimUI Brick (1024×768). Pick the build that matches your device.
 
 | Name | Description |
 |------|-------------|
-| **Blips** | Blips Playdate. |
-| **Blockdude** | Blockdude Playdate. |
-| **cglpSDL2** | Crisp Games Library Portable. |
-| **Checkers** | Checkers Playdate. |
-| **Dynamate** | Dynamate Playdate. |
-| **Formula 1 G&W** | Formula 1 Game & Watch Playdate. |
-| **MazeThingie** | Maze generator and player. |
-| **Playdoban** | Playdoban Playdate. |
-| **Puztrix** | Puztrix Playdate. |
-| **Puzzle Land** | Puzzle Land Playdate. |
-| **Retrotime** | Retrotime. |
-| **Rubido** | Rubido Playdate. |
-| **Waternet** | Waternet Playdate. |
-| **Worm** | Worm Playdate. |
-| **Znax** | Znax. |
+| **Blips (Smart Pro)** | Blips Playdate. |
+| **Blockdude (Smart Pro)** | Blockdude Playdate. |
+| **cglpSDL2 (Smart Pro)** | Crisp Games Library Portable. |
+| **Checkers (Smart Pro)** | Checkers Playdate. |
+| **Dynamate (Smart Pro)** | Dynamate Playdate. |
+| **Formula 1 G&W (Smart Pro)** | Formula 1 Game & Watch Playdate. |
+| **MazeThingie (Smart Pro)** | Maze generator and player. |
+| **Playdoban (Smart Pro)** | Playdoban Playdate. |
+| **Puztrix (Smart Pro)** | Puztrix Playdate. |
+| **Puzzle Land (Smart Pro)** | Puzzle Land Playdate. |
+| **Retrotime (Smart Pro)** | Retrotime. |
+| **Rubido (Smart Pro)** | Rubido Playdate. |
+| **Waternet (Smart Pro)** | Waternet Playdate. |
+| **Worm (Smart Pro)** | Worm Playdate. |
+| **Znax (Smart Pro)** | Znax. |
+| **Blips (Brick)** | Blips Playdate. |
+| **Blockdude (Brick)** | Blockdude Playdate. |
+| **cglpSDL2 (Brick)** | Crisp Games Library Portable. |
+| **Checkers (Brick)** | Checkers Playdate. |
+| **Dynamate (Brick)** | Dynamate Playdate. |
+| **Formula 1 G&W (Brick)** | Formula 1 Game & Watch Playdate. |
+| **MazeThingie (Brick)** | Maze generator and player. |
+| **Playdoban (Brick)** | Playdoban Playdate. |
+| **Puztrix (Brick)** | Puztrix Playdate. |
+| **Puzzle Land (Brick)** | Puzzle Land Playdate. |
+| **Retrotime (Brick)** | Retrotime. |
+| **Rubido (Brick)** | Rubido Playdate. |
+| **Waternet (Brick)** | Waternet Playdate. |
+| **Worm (Brick)** | Worm Playdate. |
+| **Znax (Brick)** | Znax. |
 
 ---
 
@@ -267,15 +243,11 @@ All removal requests will be reviewed by the maintainers before merging.
 Thanks to all the community contributors who build and maintain these tools:
 
 - **djware** — foundational tools and LED utilities
-- **schmurtzm** — EmuCleaner, BootLogo, System Tools, Resume at Boot, Scraper
 - **SneakyTwitch** — config backup/restore and BGM tools
-- **rkr87** — CollaGen collection manager
-- **Primitheus** — OctoLair ROM downloader
 - **ahmadteeb** — EmuDrop and DNS Changer
-- **veckia9x** — ThemixPro and Syncthing
 - **hugorosario** — BrickTools
 - **rommapp** — Grout
-- **nlkcodenew** — Trimui-XiaoZhi, Trimui Terminal and Music Player
+- **nlkcodenew** — Trimui-XiaoZhi, Trimui Terminal, Music Player, Trimui Remote and Trimui GameSync
 - **ro8inmorgan** — LED Control
 - **pierceTee** — Brick LED Controller
 - **joyrider3774** — TrimUI Smart Pro games and the 32Blit TrimUI ports
