@@ -144,183 +144,40 @@
     "icon": "https://raw.githubusercontent.com/djware/TrimUITools/e5b75988dc31983e7da86263c465a7a09b2b52f7/Tools/BootLogo/icon.png"
   },
   {
-    "name": "EmuCleaner",
-    "author": "schmurtzm",
-    "description": "Automatically hides emulators that have no ROMs installed and re-enables those that do. Prevents a cluttered console list and is also useful after adding new ROMs to refresh which emulators are visible. Edits Emus/show.json using the same mechanism as the stock MainUI, so manual show/hide overrides still work.",
-    "date": "2024-04-01",
-    "version": "1.0",
-    "dependencies": [],
-    "mainfilename": "launch.sh",
-    "download": "https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fschmurtzm%2FTrimUI-Smart-Pro%2Ftree%2Fmain%2FEmuCleaner",
-    "device": ["trimui_smart_pro"],
-    "icon": "https://raw.githubusercontent.com/schmurtzm/TrimUI-Smart-Pro/2309d5bb5de50a819a2fb9064de4fb0c6e64c061/EmuCleaner/Apps/EmuCleaner/EmulatorsCleaner.png"
-  },
-  {
-    "name": "BootLogo",
-    "author": "schmurtzm",
-    "description": "A user-friendly app for flashing a custom boot logo on the TrimUI Smart Pro. Place your image on the SD card and run the app to apply it at startup.",
-    "date": "2024-04-01",
-    "version": "1.0",
-    "dependencies": [],
-    "mainfilename": "launch.sh",
-    "download": "https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fschmurtzm%2FTrimUI-Smart-Pro%2Ftree%2Fmain%2FBootlogo",
-    "device": ["trimui_smart_pro"],
-    "icon": "https://raw.githubusercontent.com/schmurtzm/TrimUI-Smart-Pro/2309d5bb5de50a819a2fb9064de4fb0c6e64c061/Bootlogo/Apps/BootLogo/icon.png"
-  },
-  {
-    "name": "System Tools",
-    "author": "schmurtzm",
-    "description": "A hub app that centralizes multiple utility scripts and tools in one place, including a PSX Analog Detector that auto-configures controller settings for PlayStation games compatible with analog sticks.",
-    "date": "2024-04-01",
-    "version": "1.0",
-    "dependencies": [],
-    "mainfilename": "launch.sh",
-    "download": "https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fschmurtzm%2FTrimUI-Smart-Pro%2Ftree%2Fmain%2FSystemTools",
-    "device": ["trimui_smart_pro"],
-    "icon": "https://raw.githubusercontent.com/schmurtzm/TrimUI-Smart-Pro/2309d5bb5de50a819a2fb9064de4fb0c6e64c061/SystemTools/Apps/SystemTools/icon.png"
-  },
-  {
-    "name": "Resume at Boot",
-    "author": "schmurtzm",
-    "description": "A set of scripts that adds a resume-last-game feature on startup, automatically relaunching the most recently played game when the device powers on.",
-    "date": "2024-04-01",
-    "version": "1.0",
-    "dependencies": [],
-    "mainfilename": "launch.sh",
-    "download": "https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fschmurtzm%2FTrimUI-Smart-Pro%2Ftree%2Fmain%2FResumeAtBoot",
-    "device": ["trimui_smart_pro"],
-    "icon": "https://raw.githubusercontent.com/schmurtzm/TrimUI-Smart-Pro/2309d5bb5de50a819a2fb9064de4fb0c6e64c061/_assets/ResumeAtBoot.webp"
-  },
-  {
-    "name": "Scraper",
-    "author": "schmurtzm",
-    "description": "A command-line ScreenScraper implementation that automatically downloads box art and media for your ROM library directly on the device.",
-    "date": "2024-04-01",
-    "version": "1.0",
-    "dependencies": [],
-    "mainfilename": "launch.sh",
-    "download": "https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fschmurtzm%2FTrimUI-Smart-Pro%2Ftree%2Fmain%2FScraper",
-    "device": ["trimui_smart_pro"],
-    "icon": "https://raw.githubusercontent.com/schmurtzm/TrimUI-Smart-Pro/2309d5bb5de50a819a2fb9064de4fb0c6e64c061/_assets/scraper.webp"
-  },
-  {
-    "name": "Backup Config Files",
+    "name": "Config Backup & BGM Tools",
     "author": "SneakyTwitch",
-    "description": "Backs up emulator configuration files for PPSSPP, NDS (DraStic), and RetroArch — including button mappings, core configs, and shader settings — to a timestamped archive on the SDCARD. Run before any major system change to protect your settings.",
+    "description": "Four small apps in one download: Backup Config Files and Restore Config Files (PPSSPP, DraStic and RetroArch settings), BGM Start/Stop (toggle the active theme's background music) and BGM Swap (replace it with your own bgm.mp3 from the SD card root). Installing adds all four to Apps.",
     "date": "2024-05-12",
     "version": "2.0",
     "dependencies": [],
     "mainfilename": "launch.sh",
-    "download": "https://github.com/SneakyTwitch/TrimUI-Apps/releases/latest",
+    "download": "https://github.com/SneakyTwitch/TrimUI-Apps/releases/download/v2.0/Tools.zip",
     "device": ["trimui_smart_pro"],
     "icon": "https://raw.githubusercontent.com/SneakyTwitch/TrimUI-Apps/2b022b42b4982db106b4114c7363ae2a072479c9/Tools/Apps/BackupConfigFiles/BackupConfig.png"
   },
   {
-    "name": "Restore Config Files",
-    "author": "SneakyTwitch",
-    "description": "Restores a previously created configuration backup for PPSSPP, NDS (DraStic), and RetroArch. Reads the latest backup version from ForRestoring.txt in the backup folder, or restore a specific version by editing that file. Requires a prior backup to exist.",
-    "date": "2024-05-12",
-    "version": "2.0",
-    "dependencies": [],
-    "mainfilename": "launch.sh",
-    "download": "https://github.com/SneakyTwitch/TrimUI-Apps/releases/latest",
-    "device": ["trimui_smart_pro"],
-    "icon": "https://raw.githubusercontent.com/SneakyTwitch/TrimUI-Apps/2b022b42b4982db106b4114c7363ae2a072479c9/Tools/Apps/RestoreConfigFiles/RestoreConfig.png"
-  },
-  {
-    "name": "BGM Start/Stop",
-    "author": "SneakyTwitch",
-    "description": "Toggles background music on or off for the currently active theme. If the theme folder has a bgm.mp3 in its sound directory, this app will start or stop it. Per-theme state is remembered between runs.",
-    "date": "2024-05-12",
-    "version": "2.0",
-    "dependencies": [],
-    "mainfilename": "launch.sh",
-    "download": "https://github.com/SneakyTwitch/TrimUI-Apps/releases/latest",
-    "device": ["trimui_smart_pro"],
-    "icon": "https://raw.githubusercontent.com/SneakyTwitch/TrimUI-Apps/2b022b42b4982db106b4114c7363ae2a072479c9/Tools/Apps/StartStopBGM/StartStopBGM.png"
-  },
-  {
-    "name": "BGM Swap",
-    "author": "SneakyTwitch",
-    "description": "Replaces the current theme's background music with a custom bgm.mp3 placed in the root of the SDCARD. Updates the BGM for whichever theme is currently active. The original BGM is backed up on first run as bgm-bak.mp3.",
-    "date": "2024-05-12",
-    "version": "2.0",
-    "dependencies": [],
-    "mainfilename": "launch.sh",
-    "download": "https://github.com/SneakyTwitch/TrimUI-Apps/releases/latest",
-    "device": ["trimui_smart_pro"],
-    "icon": "https://raw.githubusercontent.com/SneakyTwitch/TrimUI-Apps/2b022b42b4982db106b4114c7363ae2a072479c9/Tools/Apps/SwapBGM/SwapBGM.png"
-  },
-  {
-    "name": "CollaGen",
-    "author": "rkr87",
-    "description": "CLI-based game collection generator for the TrimUI Smart Pro. Dynamically creates and refreshes ROM collections using keyword include/exclude filters. Compatible with CrossMix-OS and, with minor edits, Stock OS. Copy the CollaGen folder to /Apps, launch it, and use the on-screen terminal to build named collections.",
-    "date": "2024-09-13",
-    "version": "2024.9.13.1",
-    "dependencies": [],
-    "mainfilename": "launch.sh",
-    "download": "https://github.com/rkr87/CollaGen/releases/latest",
-    "device": ["trimui_smart_pro"],
-    "icon": "https://raw.githubusercontent.com/rkr87/CollaGen/00db4f903d6c64bb5af0a28845a4143b3121f76c/icon.png"
-  },
-  {
-    "name": "OctoLair",
-    "author": "Primitheus",
-    "description": "Downloads ROMs directly onto the TrimUI Smart Pro from within the device, with a controller-friendly SDL2 UI. Browse systems and game listings, select titles, and download them straight to the appropriate ROM folder without touching a PC.",
-    "date": "2024-05-01",
-    "version": "1.0",
-    "dependencies": [],
-    "mainfilename": "launch.sh",
-    "download": "https://github.com/Primitheus/OctoLair/releases/latest",
-    "device": ["trimui_smart_pro"]
-  },
-  {
     "name": "EmuDrop",
     "author": "ahmadteeb",
-    "description": "Feature-rich ROM downloader with built-in screen scraper for TrimUI Smart Pro and TrimUI Brick. Provides a sleek SDL2 controller-friendly interface to browse platforms and game libraries, search, download ROMs, and pull cover art from multiple sources. Compatible with Stock OS, CrossMix-OS, and Knulli.",
+    "description": "Feature-rich ROM downloader with built-in screen scraper for TrimUI Smart Pro and TrimUI Brick. Provides a sleek SDL2 controller-friendly interface to browse platforms and game libraries, search, download ROMs, and pull cover art from multiple sources. The release zip is the CrossMix-OS build; its launcher calls CrossMix's infoscreen helper for status messages, which are skipped where that helper is missing.",
     "date": "2025-01-28",
     "version": "2.1.6",
     "dependencies": [],
     "mainfilename": "launch.sh",
-    "download": "https://github.com/ahmadteeb/EmuDrop/releases/latest",
+    "download": "https://github.com/ahmadteeb/EmuDrop/releases/download/v2.1.6/EmuDrop.zip",
     "device": ["trimui_smart_pro", "trimui_brick"],
     "icon": "https://raw.githubusercontent.com/ahmadteeb/EmuDrop/a1c4a5994ea0de14edd3210c191a22cf8b15dd7c/os/StockOS/EmuDrop/icon.png"
   },
   {
     "name": "DNS Changer",
     "author": "ahmadteeb",
-    "description": "Changes the DNS server settings on the TrimUI Smart Pro and TrimUI Brick. Useful for improving connectivity, bypassing region restrictions, or using custom DNS resolvers. Built with Python and SDL2 for a controller-friendly on-device UI.",
+    "description": "Changes the DNS server settings on the TrimUI Smart Pro and TrimUI Brick. Useful for improving connectivity, bypassing region restrictions, or using custom DNS resolvers. Built with Python and SDL2 for a controller-friendly on-device UI. Its launcher calls CrossMix's infoscreen helper for status messages; they are skipped where that helper is missing.",
     "date": "2024-06-01",
-    "version": "1.0",
+    "version": "1.0.0",
     "dependencies": [],
     "mainfilename": "launch.sh",
-    "download": "https://github.com/ahmadteeb/TSP_DNSChanger",
+    "download": "https://github.com/ahmadteeb/TSP_DNSChanger/releases/download/v1.0.0/DNSChanger.zip",
     "device": ["trimui_smart_pro", "trimui_brick"],
     "icon": "https://raw.githubusercontent.com/ahmadteeb/TSP_DNSChanger/363a8fde3a4cf80023ca48a4f26de36826100fb2/platform/Trimui%20Smart%20Pro/DNSChanger/icon.png"
-  },
-  {
-    "name": "ThemixPro",
-    "author": "veckia9x",
-    "description": "Automatically updates system icons, selected-state icons, and background images whenever a theme is changed. Themes must include icon, iconsel, and background subfolders with files named after each emulator system (e.g. SFC.png). Ships with the GREYS-DARK theme by tenlevels. Requires TRIMUI_EX or TomatoOS.",
-    "date": "2024-05-01",
-    "version": "1.0",
-    "dependencies": [],
-    "mainfilename": "launch.sh",
-    "download": "https://github.com/veckia9x/Trimui-X",
-    "device": ["trimui_smart_pro"],
-    "icon": "https://raw.githubusercontent.com/veckia9x/Trimui-X/cdc3c2a3154d7221243997bd0b9fce3192dc834a/Apps/ThemixPro/icon.png"
-  },
-  {
-    "name": "Syncthing",
-    "author": "veckia9x",
-    "description": "Installs and runs Syncthing on the TrimUI Smart Pro for wireless file synchronization between the device and a PC or phone. Optionally enables Syncthing on boot. Default credentials: user trimui / pass trimuisync. Requires TRIMUI_EX or TomatoOS.",
-    "date": "2024-05-01",
-    "version": "1.0",
-    "dependencies": [],
-    "mainfilename": "launch.sh",
-    "download": "https://github.com/veckia9x/Trimui-X",
-    "device": ["trimui_smart_pro"],
-    "icon": "https://raw.githubusercontent.com/veckia9x/Trimui-X/cdc3c2a3154d7221243997bd0b9fce3192dc834a/Apps/Syncthing/sync_icon.png"
   },
   {
     "name": "BrickTools",
@@ -419,7 +276,7 @@
     "icon": "https://raw.githubusercontent.com/nlkcodenew/trimui-remote/dcdba2ecc5f431930008bb2ccfd9d794ec647bc8/files/icon.png"
   },
   {
-    "name": "Blips",
+    "name": "Blips (Smart Pro)",
     "author": "joyrider3774",
     "description": "Blips Playdate by joyrider3774, packaged for the TrimUI Smart Pro stock OS. Extract the zip into Apps.",
     "date": "2025-12-18",
@@ -431,7 +288,7 @@
     "icon": "https://raw.githubusercontent.com/jukaLang/Packages/main/icons/jr-blips.png"
   },
   {
-    "name": "Blockdude",
+    "name": "Blockdude (Smart Pro)",
     "author": "joyrider3774",
     "description": "Blockdude Playdate by joyrider3774, packaged for the TrimUI Smart Pro stock OS. Extract the zip into Apps.",
     "date": "2025-12-18",
@@ -443,7 +300,7 @@
     "icon": "https://raw.githubusercontent.com/jukaLang/Packages/main/icons/jr-blockdude.png"
   },
   {
-    "name": "cglpSDL2",
+    "name": "cglpSDL2 (Smart Pro)",
     "author": "joyrider3774",
     "description": "Crisp Games Library Portable by joyrider3774, packaged for the TrimUI Smart Pro stock OS. Extract the zip into Apps.",
     "date": "2025-12-18",
@@ -455,7 +312,7 @@
     "icon": "https://raw.githubusercontent.com/jukaLang/Packages/main/icons/jr-cglpsdl2.png"
   },
   {
-    "name": "Checkers",
+    "name": "Checkers (Smart Pro)",
     "author": "joyrider3774",
     "description": "Checkers Playdate by joyrider3774, packaged for the TrimUI Smart Pro stock OS. Extract the zip into Apps.",
     "date": "2025-12-18",
@@ -467,7 +324,7 @@
     "icon": "https://raw.githubusercontent.com/jukaLang/Packages/main/icons/jr-checkers.png"
   },
   {
-    "name": "Dynamate",
+    "name": "Dynamate (Smart Pro)",
     "author": "joyrider3774",
     "description": "Dynamate Playdate by joyrider3774, packaged for the TrimUI Smart Pro stock OS. Extract the zip into Apps.",
     "date": "2025-12-18",
@@ -479,7 +336,7 @@
     "icon": "https://raw.githubusercontent.com/jukaLang/Packages/main/icons/jr-dynamate.png"
   },
   {
-    "name": "Formula 1 G&W",
+    "name": "Formula 1 G&W (Smart Pro)",
     "author": "joyrider3774",
     "description": "Formula 1 Game & Watch Playdate by joyrider3774, packaged for the TrimUI Smart Pro stock OS. Extract the zip into Apps.",
     "date": "2025-12-18",
@@ -491,7 +348,7 @@
     "icon": "https://raw.githubusercontent.com/jukaLang/Packages/main/icons/jr-formula_1.png"
   },
   {
-    "name": "MazeThingie",
+    "name": "MazeThingie (Smart Pro)",
     "author": "joyrider3774",
     "description": "Maze generator and player by joyrider3774, packaged for the TrimUI Smart Pro stock OS. Extract the zip into Apps.",
     "date": "2025-12-18",
@@ -503,7 +360,7 @@
     "icon": "https://raw.githubusercontent.com/jukaLang/Packages/main/icons/jr-mazethingie.png"
   },
   {
-    "name": "Playdoban",
+    "name": "Playdoban (Smart Pro)",
     "author": "joyrider3774",
     "description": "Playdoban Playdate by joyrider3774, packaged for the TrimUI Smart Pro stock OS. Extract the zip into Apps.",
     "date": "2025-12-18",
@@ -515,7 +372,7 @@
     "icon": "https://raw.githubusercontent.com/jukaLang/Packages/main/icons/jr-playdoban.png"
   },
   {
-    "name": "Puztrix",
+    "name": "Puztrix (Smart Pro)",
     "author": "joyrider3774",
     "description": "Puztrix Playdate by joyrider3774, packaged for the TrimUI Smart Pro stock OS. Extract the zip into Apps.",
     "date": "2025-12-18",
@@ -527,7 +384,7 @@
     "icon": "https://raw.githubusercontent.com/jukaLang/Packages/main/icons/jr-puztrix.png"
   },
   {
-    "name": "Puzzle Land",
+    "name": "Puzzle Land (Smart Pro)",
     "author": "joyrider3774",
     "description": "Puzzle Land Playdate by joyrider3774, packaged for the TrimUI Smart Pro stock OS. Extract the zip into Apps.",
     "date": "2025-12-18",
@@ -539,7 +396,7 @@
     "icon": "https://raw.githubusercontent.com/jukaLang/Packages/main/icons/jr-puzzleland.png"
   },
   {
-    "name": "Retrotime",
+    "name": "Retrotime (Smart Pro)",
     "author": "joyrider3774",
     "description": "Retrotime by joyrider3774, packaged for the TrimUI Smart Pro stock OS. Extract the zip into Apps.",
     "date": "2025-12-18",
@@ -551,7 +408,7 @@
     "icon": "https://raw.githubusercontent.com/jukaLang/Packages/main/icons/jr-retrotime.png"
   },
   {
-    "name": "Rubido",
+    "name": "Rubido (Smart Pro)",
     "author": "joyrider3774",
     "description": "Rubido Playdate by joyrider3774, packaged for the TrimUI Smart Pro stock OS. Extract the zip into Apps.",
     "date": "2025-12-18",
@@ -563,7 +420,7 @@
     "icon": "https://raw.githubusercontent.com/jukaLang/Packages/main/icons/jr-rubido.png"
   },
   {
-    "name": "Waternet",
+    "name": "Waternet (Smart Pro)",
     "author": "joyrider3774",
     "description": "Waternet Playdate by joyrider3774, packaged for the TrimUI Smart Pro stock OS. Extract the zip into Apps.",
     "date": "2025-12-18",
@@ -575,7 +432,7 @@
     "icon": "https://raw.githubusercontent.com/jukaLang/Packages/main/icons/jr-waternet.png"
   },
   {
-    "name": "Worm",
+    "name": "Worm (Smart Pro)",
     "author": "joyrider3774",
     "description": "Worm Playdate by joyrider3774, packaged for the TrimUI Smart Pro stock OS. Extract the zip into Apps.",
     "date": "2025-12-18",
@@ -587,7 +444,7 @@
     "icon": "https://raw.githubusercontent.com/jukaLang/Packages/main/icons/jr-worm.png"
   },
   {
-    "name": "Znax",
+    "name": "Znax (Smart Pro)",
     "author": "joyrider3774",
     "description": "Znax by joyrider3774, packaged for the TrimUI Smart Pro stock OS. Extract the zip into Apps.",
     "date": "2025-12-18",
@@ -1101,5 +958,197 @@
     "download": "https://github.com/joyrider3774/32blit_trimui/releases/latest/download/willy.-.32blit.-.AARCH64.-.Trimui.zip",
     "device": ["trimui_smart_pro", "trimui_brick"],
     "icon": "https://raw.githubusercontent.com/jukaLang/Packages/main/icons/32blit-willy.png"
+  },
+  {
+    "name": "Blips (Brick)",
+    "author": "joyrider3774",
+    "description": "Blips Playdate by joyrider3774, packaged for the TrimUI Brick stock OS. Extract the zip into Apps.",
+    "date": "2025-12-18",
+    "version": "latest",
+    "dependencies": [],
+    "mainfilename": "launch.sh",
+    "download": "https://github.com/joyrider3774/trimui_brick_games/releases/latest/download/blips.-.Trimui_Brick.zip",
+    "device": ["trimui_brick"],
+    "icon": "https://raw.githubusercontent.com/jukaLang/Packages/main/icons/jr-blips.png"
+  },
+  {
+    "name": "Blockdude (Brick)",
+    "author": "joyrider3774",
+    "description": "Blockdude Playdate by joyrider3774, packaged for the TrimUI Brick stock OS. Extract the zip into Apps.",
+    "date": "2025-12-18",
+    "version": "latest",
+    "dependencies": [],
+    "mainfilename": "launch.sh",
+    "download": "https://github.com/joyrider3774/trimui_brick_games/releases/latest/download/blockdude.-.Trimui_Brick.zip",
+    "device": ["trimui_brick"],
+    "icon": "https://raw.githubusercontent.com/jukaLang/Packages/main/icons/jr-blockdude.png"
+  },
+  {
+    "name": "cglpSDL2 (Brick)",
+    "author": "joyrider3774",
+    "description": "Crisp Games Library Portable by joyrider3774, packaged for the TrimUI Brick stock OS. Extract the zip into Apps.",
+    "date": "2025-12-18",
+    "version": "latest",
+    "dependencies": [],
+    "mainfilename": "launch.sh",
+    "download": "https://github.com/joyrider3774/trimui_brick_games/releases/latest/download/cglpsdl2.-.Trimui_Brick.zip",
+    "device": ["trimui_brick"],
+    "icon": "https://raw.githubusercontent.com/jukaLang/Packages/main/icons/jr-cglpsdl2.png"
+  },
+  {
+    "name": "Checkers (Brick)",
+    "author": "joyrider3774",
+    "description": "Checkers Playdate by joyrider3774, packaged for the TrimUI Brick stock OS. Extract the zip into Apps.",
+    "date": "2025-12-18",
+    "version": "latest",
+    "dependencies": [],
+    "mainfilename": "launch.sh",
+    "download": "https://github.com/joyrider3774/trimui_brick_games/releases/latest/download/checkers.-.Trimui_Brick.zip",
+    "device": ["trimui_brick"],
+    "icon": "https://raw.githubusercontent.com/jukaLang/Packages/main/icons/jr-checkers.png"
+  },
+  {
+    "name": "Dynamate (Brick)",
+    "author": "joyrider3774",
+    "description": "Dynamate Playdate by joyrider3774, packaged for the TrimUI Brick stock OS. Extract the zip into Apps.",
+    "date": "2025-12-18",
+    "version": "latest",
+    "dependencies": [],
+    "mainfilename": "launch.sh",
+    "download": "https://github.com/joyrider3774/trimui_brick_games/releases/latest/download/dynamate.-.Trimui_Brick.zip",
+    "device": ["trimui_brick"],
+    "icon": "https://raw.githubusercontent.com/jukaLang/Packages/main/icons/jr-dynamate.png"
+  },
+  {
+    "name": "Formula 1 G&W (Brick)",
+    "author": "joyrider3774",
+    "description": "Formula 1 Game & Watch Playdate by joyrider3774, packaged for the TrimUI Brick stock OS. Extract the zip into Apps.",
+    "date": "2025-12-18",
+    "version": "latest",
+    "dependencies": [],
+    "mainfilename": "launch.sh",
+    "download": "https://github.com/joyrider3774/trimui_brick_games/releases/latest/download/formula_1.-.Trimui_Brick.zip",
+    "device": ["trimui_brick"],
+    "icon": "https://raw.githubusercontent.com/jukaLang/Packages/main/icons/jr-formula_1.png"
+  },
+  {
+    "name": "MazeThingie (Brick)",
+    "author": "joyrider3774",
+    "description": "Maze generator and player by joyrider3774, packaged for the TrimUI Brick stock OS. Extract the zip into Apps.",
+    "date": "2025-12-18",
+    "version": "latest",
+    "dependencies": [],
+    "mainfilename": "launch.sh",
+    "download": "https://github.com/joyrider3774/trimui_brick_games/releases/latest/download/mazethingie.-.Trimui_Brick.zip",
+    "device": ["trimui_brick"],
+    "icon": "https://raw.githubusercontent.com/jukaLang/Packages/main/icons/jr-mazethingie.png"
+  },
+  {
+    "name": "Playdoban (Brick)",
+    "author": "joyrider3774",
+    "description": "Playdoban Playdate by joyrider3774, packaged for the TrimUI Brick stock OS. Extract the zip into Apps.",
+    "date": "2025-12-18",
+    "version": "latest",
+    "dependencies": [],
+    "mainfilename": "launch.sh",
+    "download": "https://github.com/joyrider3774/trimui_brick_games/releases/latest/download/playdoban.-.Trimui_Brick.zip",
+    "device": ["trimui_brick"],
+    "icon": "https://raw.githubusercontent.com/jukaLang/Packages/main/icons/jr-playdoban.png"
+  },
+  {
+    "name": "Puztrix (Brick)",
+    "author": "joyrider3774",
+    "description": "Puztrix Playdate by joyrider3774, packaged for the TrimUI Brick stock OS. Extract the zip into Apps.",
+    "date": "2025-12-18",
+    "version": "latest",
+    "dependencies": [],
+    "mainfilename": "launch.sh",
+    "download": "https://github.com/joyrider3774/trimui_brick_games/releases/latest/download/puztrix.-.Trimui_Brick.zip",
+    "device": ["trimui_brick"],
+    "icon": "https://raw.githubusercontent.com/jukaLang/Packages/main/icons/jr-puztrix.png"
+  },
+  {
+    "name": "Puzzle Land (Brick)",
+    "author": "joyrider3774",
+    "description": "Puzzle Land Playdate by joyrider3774, packaged for the TrimUI Brick stock OS. Extract the zip into Apps.",
+    "date": "2025-12-18",
+    "version": "latest",
+    "dependencies": [],
+    "mainfilename": "launch.sh",
+    "download": "https://github.com/joyrider3774/trimui_brick_games/releases/latest/download/puzzleland.-.Trimui_Brick.zip",
+    "device": ["trimui_brick"],
+    "icon": "https://raw.githubusercontent.com/jukaLang/Packages/main/icons/jr-puzzleland.png"
+  },
+  {
+    "name": "Retrotime (Brick)",
+    "author": "joyrider3774",
+    "description": "Retrotime by joyrider3774, packaged for the TrimUI Brick stock OS. Extract the zip into Apps.",
+    "date": "2025-12-18",
+    "version": "latest",
+    "dependencies": [],
+    "mainfilename": "launch.sh",
+    "download": "https://github.com/joyrider3774/trimui_brick_games/releases/latest/download/retrotime.-.Trimui_Brick.zip",
+    "device": ["trimui_brick"],
+    "icon": "https://raw.githubusercontent.com/jukaLang/Packages/main/icons/jr-retrotime.png"
+  },
+  {
+    "name": "Rubido (Brick)",
+    "author": "joyrider3774",
+    "description": "Rubido Playdate by joyrider3774, packaged for the TrimUI Brick stock OS. Extract the zip into Apps.",
+    "date": "2025-12-18",
+    "version": "latest",
+    "dependencies": [],
+    "mainfilename": "launch.sh",
+    "download": "https://github.com/joyrider3774/trimui_brick_games/releases/latest/download/rubido.-.Trimui_Brick.zip",
+    "device": ["trimui_brick"],
+    "icon": "https://raw.githubusercontent.com/jukaLang/Packages/main/icons/jr-rubido.png"
+  },
+  {
+    "name": "Waternet (Brick)",
+    "author": "joyrider3774",
+    "description": "Waternet Playdate by joyrider3774, packaged for the TrimUI Brick stock OS. Extract the zip into Apps.",
+    "date": "2025-12-18",
+    "version": "latest",
+    "dependencies": [],
+    "mainfilename": "launch.sh",
+    "download": "https://github.com/joyrider3774/trimui_brick_games/releases/latest/download/waternet.-.Trimui_Brick.zip",
+    "device": ["trimui_brick"],
+    "icon": "https://raw.githubusercontent.com/jukaLang/Packages/main/icons/jr-waternet.png"
+  },
+  {
+    "name": "Worm (Brick)",
+    "author": "joyrider3774",
+    "description": "Worm Playdate by joyrider3774, packaged for the TrimUI Brick stock OS. Extract the zip into Apps.",
+    "date": "2025-12-18",
+    "version": "latest",
+    "dependencies": [],
+    "mainfilename": "launch.sh",
+    "download": "https://github.com/joyrider3774/trimui_brick_games/releases/latest/download/worm.-.Trimui_Brick.zip",
+    "device": ["trimui_brick"],
+    "icon": "https://raw.githubusercontent.com/jukaLang/Packages/main/icons/jr-worm.png"
+  },
+  {
+    "name": "Znax (Brick)",
+    "author": "joyrider3774",
+    "description": "Znax by joyrider3774, packaged for the TrimUI Brick stock OS. Extract the zip into Apps.",
+    "date": "2025-12-18",
+    "version": "latest",
+    "dependencies": [],
+    "mainfilename": "launch.sh",
+    "download": "https://github.com/joyrider3774/trimui_brick_games/releases/latest/download/znax.-.Trimui_Brick.zip",
+    "device": ["trimui_brick"],
+    "icon": "https://raw.githubusercontent.com/jukaLang/Packages/main/icons/jr-znax.png"
+  },
+  {
+    "name": "Trimui GameSync",
+    "author": "nlkcodenew",
+    "description": "Game-library manager for the TrimUI Brick Pro and Smart Pro S on stock OS. Browse the games on your card by system, add Google Drive folder links (a Drive API key is enough for link-shared folders), compare and sync them. Checks for updates on launch.",
+    "date": "2026-10-17",
+    "version": "0.3.1",
+    "dependencies": [],
+    "mainfilename": "launch.sh",
+    "download": "https://github.com/nlkcodenew/Trimui-GameSync/releases/download/v0.3.1/Trimui-GameSync-v0.3.1.zip",
+    "device": ["trimui_brick_pro", "trimui_smart_pro_s"],
+    "icon": "https://raw.githubusercontent.com/jukaLang/Packages/main/icons/gamesync.png"
   }
 ]
